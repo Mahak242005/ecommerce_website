@@ -1,0 +1,60 @@
+<%-- 
+    Document   : contactus
+    Created on : March 26, 2018
+    Author     : Mahak
+--%>
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+         <title>Mahak Interiors</title>
+         <%@include file="head.jsp" %>
+           <script>
+              $(document).ready(function(){
+   
+             $('a[href="contactus.jsp"]').parent().addClass('active');
+             $('a[href="contactus.jsp"]').css('color','black');
+             
+             $('#e1').attr('href',"mailto:"+$('#e1').text())
+        
+});
+         </script>
+    </head>
+    <body >
+        
+        
+    <div class="row" >
+        <div class="col-md-4 col-md-offset-3" style="margin-top: -40px">
+        <div class="page-header"><h1>Customer support</h1></div>
+       <div class="well">
+           <i class="fa fa-envelope"></i> <b>Email</b><br/><br/>
+           Please feel free to write to us on: <a id="e1">mahakkashyap432@gmail.com</a>
+       </div>
+        
+        <div class="well">
+           <i class="fa fa-phone"></i> <b>Phone</b><br/><br/>
+           Talk to us on our 24hrs help line: <b>4566589133</b><br/>
+           For complaints call: <b>4794231499</b><br/>
+       </div>
+        
+        <div class="well">
+           <i class="fa fa-home"></i> <b>Post</b><br/><br/>
+           Near HUDA Market,<br/>
+           Gurugram, Haryana - 122003
+       </div>
+        </div>
+        <div class="col-md-4" style="padding-top:80px;">
+        <div class="card" style="height:200px">
+  <div  style="background-color:white">
+    <h4><b>Mahak</b></h4> 
+    <p>Architect & Engineer <br>
+       at Mahak Interiors</p> 
+  </div>
+</div>
+        </div>
+        
+    </div>
+    </body>
+</html>
